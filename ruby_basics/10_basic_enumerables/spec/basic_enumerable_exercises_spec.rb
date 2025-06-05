@@ -5,7 +5,7 @@ RSpec.describe 'Basic Enumerable Exercises' do
 
   describe 'display current inventory exercise' do
 
-    it 'outputs each inventory item' do
+    xit 'outputs each inventory item' do
       expect($stdout).to receive(:puts).with("apples, quantity: 1")
       expect($stdout).to receive(:puts).with("bananas, quantity: 3")
       expect($stdout).to receive(:puts).with("oranges, quantity: 7")
@@ -72,13 +72,13 @@ RSpec.describe 'Basic Enumerable Exercises' do
 
   describe 'find word length exercise' do
     
-    xit 'returns a hash with rocket syntax when using strings' do
+    it 'returns a hash with rocket syntax when using strings' do
       animals = ['cat', 'horse', 'rabbit', 'deer']
       result = { 'cat' => 3, 'horse' => 5, 'rabbit' => 6, 'deer' => 4 }
       expect(find_word_lengths(animals)).to eq(result)
     end
     
-    xit 'returns a hash with symbols syntax when using symbols' do
+    it 'returns a hash with symbols syntax when using symbols' do
       animals = [:cat, :horse, :rabbit, :deer]
       result = { cat: 3, horse: 5, rabbit: 6, deer: 4 }
       expect(find_word_lengths(animals)).to eq(result)
